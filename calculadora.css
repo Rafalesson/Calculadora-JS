@@ -1,0 +1,145 @@
+  *{
+    margin: 0;
+    padding: 0;
+  }
+
+  body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #333;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .titulo{
+    text-align: center;
+    width: 100%;
+  }
+
+  .container{
+    margin: auto;
+    width: 25%;
+    padding: .5rem;
+    border: 1px solid #f2f2f2;
+    -webkit-box-shadow: 1px 1px 4px 0px rgba(176,176,176,1);
+    -moz-box-shadow: 1px 1px 4px 0px rgba(176,176,176,1);
+    box-shadow: 1px 1px 4px 0px rgba(176,176,176,1);
+    background-color: #F8F8F8;
+  }
+
+  .header{
+    background-color: #81C784;
+    padding: .5rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .result{
+    font-size: 2rem;
+    padding: 24px 5px;
+    font-weight: 700;
+    text-align: right;
+    width: 96%;
+    border: none;
+    background-color: #F8F8F8;
+    outline: none; 
+  }
+
+  .first-row,
+  .second-row,
+  .third-row,
+  .fourth-row,
+  .conflict {
+    display: flex;
+    padding: .2rem;
+  }
+
+  .global{
+   padding: 1rem;
+   font-weight: bold;
+   font-size: 1.1rem;
+   border: none;
+   border-radius: 3px;
+   background-color: #F2F2F2;
+   float: left;
+   width: 23.5%;
+   margin: 0 2px;
+
+  }
+
+  input[type = button]:hover{
+    cursor: pointer;
+  }
+
+  .conflict .left,
+  .conflict .right{
+    float: left;
+    position: relative;
+  }
+
+  .left{
+    width: 74%;
+  }
+
+  .right{
+    width: 24%;
+  }
+
+  .big{
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    border-radius: 3px;
+    background-color: #F2F2F2;
+    float: left;
+    width: 64.5%;
+    margin: 0 2px;
+  }
+
+  .small{
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    border-radius: 3px;
+    background-color: #F2F2F2;
+    float: left;
+    width: 31.5%;
+    margin: 0 2px;
+  }
+
+  .plus{
+    height: 105px;
+    width: 100%;
+  }
+
+  .clear{
+    margin-top: .5rem;
+    width: 100%;
+
+
+  }
+
+  .green{
+    background-color: #81C784;
+  }
+
+  .red{
+   background-color: #F50258;
+  }
+
+  .grey{
+    background-color: #F2F2F2;
+  }
+
+  .white-text{
+    color: #fff;
+  }
+
+  .top-margin{
+    margin-top: 4px;
+  }
+  

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculadora.css">
+    <script src="calculadora.js" defer></script>
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1 class="titulo white-text">Calculadora Básica</h1>
+    <div class="container">
+      <div class="header white-text">Calculadora</div>
+      <input type="text" class="result" value="0">
+
+      <div class="second-row">
+        <input type="button" name="" value="7" class="global" onclick="SetaUmValor(botoes[0].value)">
+        <input type="button" name="" value="8" class="global" onclick="SetaUmValor(botoes[1].value)">
+        <input type="button" name="" value="9" class="global" onclick="SetaUmValor(botoes[2].value)">
+        <input type="button" name="" value="/" class="global"
+        onclick="Operacoes(botoes[3].value)">
+      </div>
+
+      <div class="third-row">
+        <input type="button" name="" value="4" class="global" onclick="SetaUmValor(botoes[4].value)">
+        <input type="button" name="" value="5" class="global" onclick="SetaUmValor(botoes[5].value)">
+        <input type="button" name="" value="6" class="global" onclick="SetaUmValor(botoes[6].value)">
+        <input type="button" name="" value="*" class="global" onclick="Operacoes(botoes[7].value)">
+      </div>
+
+      <div class="fourth-row">
+        <input type="button" name="" value="1" class="global" onclick="SetaUmValor(botoes[8].value)">
+        <input onclick="SetaUmValor(botoes[9].value)" type="button" name="" value="2" class="global">
+        <input onclick="SetaUmValor(botoes[10].value)" type="button" name="" value="3" class="global">
+        <input type="button" name="" value="-" class="global" onclick="Operacoes(botoes[11].value)">
+      </div>
+
+      <div class="conflict">
+        <div class="left">
+          <input type="button" name="" value="0" class=" big" onclick="SetaUmValor(botoes[12].value)" >
+          <input type="button" name="" value="." class=" small" onclick="PontoFlutuante(botoes[13].value)">
+          <input type="button" name="" value="Del" class="white-text small top-margin red" onclick="Limpar()">
+          <input type="button" name="" value="=" class="white-text big top-margin green" onclick="Resultado(resultado.value)">
+        </div>
+
+        <div class="right">
+          <input type="button" name="" value="+" class="global grey plus" onclick="Operacoes(botoes[16].value)">
+        </div>
+      </div>
+    </div>
+</body>
+</html>
